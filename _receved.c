@@ -18,4 +18,5 @@ int _receved(char **receved)
 			return (0);
 		}
 	}
+	return(0);
 }
