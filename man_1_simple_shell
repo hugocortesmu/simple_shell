@@ -1,0 +1,49 @@
+.TH "SIMPLE_SHELL" "15 April 2021"
+
+.SH NAME
+    	Simple Shell - A simple UNIX command interpreter.
+.SH SYNOPSIS
+	[COMMAND] [OPTION]
+.SH DESCRIPTION
+	Process.
+
+	getline - a program that keeps in memory the line intrcuciton given by the user inside the shell.
+
+.br
+	token - a program that tokenize by strings.
+
+.br
+	fork - a proram that creates child process so the shell keeps runing.
+
+.br
+	execve - a program that execute arguments into various process.
+
+.br
+	wait - a program that demmans a child process to finish its execution before beginning a new one.
+
+.br
+	environment - a variable that holds all the c programs.
+
+.SH RETURN VALUE
+    	0 succes for normal process termination.
+.SH EXAMPLES
+
+
+	$ ./hsh
+.br
+		($) /bin/ls
+.br
+		AUTHORS  README.md  path.c  shell.h  man_1_simple_shell  (agregar los nombres que faltan al final)
+.br
+		($)
+.br
+		($) exit
+.br
+	$
+
+.SH BUGS
+    	No bugs registered.(for now)
+.SH AUTHOR
+	Written by Sergio Velasquez <2458@holbertonschool.com>, and Hugo Cortés <hugocortesmu@gmail.com>.
+.SH COPYRIGHT
+   	Copyright © 2021 Own elaboration.
