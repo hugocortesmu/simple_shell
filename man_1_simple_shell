@@ -33,7 +33,7 @@
 .br
 		($) /bin/ls
 .br
-		AUTHORS  README.md  path.c  shell.h  man_1_simple_shell  (agregar los nombres que faltan al final)
+		AUTHORS  README.md  _receved.c  count_word.c  environ.c  man_1_simple_shell  shell.h  simple_shell.c  strtok.c  tokenizer.c
 .br
 		($)
 .br
@@ -42,7 +42,7 @@
 	$
 
 .SH BUGS
-    	No bugs registered.(for now)
+    	No bugs registered.
 .SH AUTHOR
 	Written by Sergio Velasquez <2458@holbertonschool.com>, and Hugo Cortés <hugocortesmu@gmail.com>.
 .SH COPYRIGHT
