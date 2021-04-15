@@ -42,26 +42,29 @@ What you should learn from this project:
 ## Usage
 ```
 char _environ(char *env)
-{
-	int i = 0;
-	char *aux = NULL;
-	char *token = NULL;
 
-	while (*(environ + i))
+unsigned int counter_words(char *str)
+{
+	int state = 0;
+	unsigned int counter = 0;
+
+	while (*str != '\0')
 	{
-		if (!strncmp(environ[i], "PATH=", 5))
+		if (*str == 32 || *str == 10 || *str == 9)
 		{
-			aux = environ[i] + 5;
+			state = 0;
 		}
-		i++;
+		else if (state == 0)
+		{
+			state = 1;
+			++counter;
+		}
+		++str;
 	}
-	token = strtok(aux, ":");
-	while (token != NULL)
-	{
-		printf("%s\n", token);
-		token = strtok(NULL, ":");
-	}
+	return (counter);
+
 }
+
 ```
 
 
