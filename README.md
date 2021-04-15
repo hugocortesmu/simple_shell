@@ -1,7 +1,7 @@
 # simple_shell
 
 ## C Programming Language
-
+Project status: in procces
 
 
 ## Table of Contents
@@ -28,13 +28,17 @@ What you should learn from this project:
 ![Image text]()
 ## Files
 ***
-| File | Description |
+| # | File |
 | ------------- | ------------- |
-|      shell.h       | header file that contains the structure and prototypes of the project|
-|               |   |
-|           |   |
-|       functions.c      | Contains the functions that print the given format  |
-|        |  |
+|      1    | shell.h |
+|      2    |  simple_shell.c |
+|      3    |   strtok.c |
+|      4    | tokenizer.c  |
+|      5    |  environ.c |
+|      6    | count_word.c  |
+|      7    |  _receved.c |
+|      8    | AUTHORS  |
+|      9    |  man_1_simple_shell |
 ## Usage
 ```
 example
