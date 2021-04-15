@@ -1,7 +1,7 @@
 # simple_shell
 
 ## C Programming Language
-
+Project status: in procces
 
 
 ## Table of Contents
@@ -25,19 +25,43 @@ What you should learn from this project:
 
 ## Flowchart
 ***
-![Image text]()
+![Image text](https://media-exp1.licdn.com/dms/image/C4E22AQHxB2qbamEvJg/feedshare-shrink_1280/0/1618458721260?e=1621468800&v=beta&t=wEwYAjF_C66eyXX1oOctr1iSh2l4N9d9K1mkFTGKyqs)
 ## Files
 ***
-| File | Description |
+| # | File |
 | ------------- | ------------- |
-|      shell.h       | header file that contains the structure and prototypes of the project|
-|               |   |
-|           |   |
-|       functions.c      | Contains the functions that print the given format  |
-|        |  |
+|      1    | shell.h |
+|      2    |  simple_shell.c |
+|      3    |   strtok.c |
+|      4    | tokenizer.c  |
+|      5    |  environ.c |
+|      6    | count_word.c  |
+|      7    |  _receved.c |
+|      8    | AUTHORS  |
+|      9    |  man_1_simple_shell |
 ## Usage
 ```
-example
+char _environ(char *env)
+{
+	int i = 0;
+	char *aux = NULL;
+	char *token = NULL;
+
+	while (*(environ + i))
+	{
+		if (!strncmp(environ[i], "PATH=", 5))
+		{
+			aux = environ[i] + 5;
+		}
+		i++;
+	}
+	token = strtok(aux, ":");
+	while (token != NULL)
+	{
+		printf("%s\n", token);
+		token = strtok(NULL, ":");
+	}
+}
 ```
 
 
