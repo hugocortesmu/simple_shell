@@ -25,4 +25,5 @@ char _environ(char *env)
 		printf("%s\n", token);
 		token = strtok(NULL, ":");
 	}
+	return(0);
 }
