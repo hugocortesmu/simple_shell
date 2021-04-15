@@ -41,7 +41,27 @@ What you should learn from this project:
 |      9    |  man_1_simple_shell |
 ## Usage
 ```
-example
+char _environ(char *env)
+{
+	int i = 0;
+	char *aux = NULL;
+	char *token = NULL;
+
+	while (*(environ + i))
+	{
+		if (!strncmp(environ[i], "PATH=", 5))
+		{
+			aux = environ[i] + 5;
+		}
+		i++;
+	}
+	token = strtok(aux, ":");
+	while (token != NULL)
+	{
+		printf("%s\n", token);
+		token = strtok(NULL, ":");
+	}
+}
 ```
 
 
