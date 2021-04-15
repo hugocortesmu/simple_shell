@@ -29,7 +29,7 @@
 .SH EXAMPLES
 
 
-	$ ./hsh
+	$ ./aut
 .br
 		($) /bin/ls
 .br
