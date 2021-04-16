@@ -1,19 +1,23 @@
 # simple_shell
 
-## C Programming Language
+### C Programming Language
 Project status: in procces
 
 
 ## Table of Contents
 1. [General Info](#general-info)
-2. [Flowchart](#Flowchart)
-3. [Files](#files)
+2. [Requirements](#Requirements)
+3. [Flowchart](#Flowchart)
+4. [Files](#files)
 5. [Usage](#Usage)
-4. [Authors](#Authors)
+6. [Authors](#Authors)
 
-### General Info
+## General Info
 ***
-This is a project that seeks to imitate the behavior and environment of a simple shell in such a way that it emulates its operation and logic. Understanding everything as a puzzle, where we work to strengthen each piece in a rigorous way and then unite them and get to move in the shell environment created by ourselves.
+This is a UNIX command line interpreter based on the simple shell(sh). It reads user input from the command line, interprets it, and executes commands.
+
+In this project we want to emulate the Shell command interpreter, which allows the user to communicate with the kernel through instructions, which in turn allows them to be executed, on the other hand it allows access to tools that allow controlling the operation of the computer.
+
 
 What you should learn from this project:
 
@@ -22,6 +26,21 @@ What you should learn from this project:
 - The complexities of making a simple shell.
 - Manage lots of files and find a good workflow.
 - reinforce teamwork skills.
+
+## Requirements
+
+* Gcc, version >= 4.8.4
+* Linux
+
+### Steps to compile the shell and execute
+git clone
+
+gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
+
+./hsh
+
+Enter your first command.
+
 
 ## Flowchart
 ***
@@ -41,29 +60,21 @@ What you should learn from this project:
 |      9    |  man_1_simple_shell |
 ## Usage
 ```
-char _environ(char *env)
+$ ./hsh
 
-unsigned int counter_words(char *str)
-{
-	int state = 0;
-	unsigned int counter = 0;
+	($) /bin/ls
 
-	while (*str != '\0')
-	{
-		if (*str == 32 || *str == 10 || *str == 9)
-		{
-			state = 0;
-		}
-		else if (state == 0)
-		{
-			state = 1;
-			++counter;
-		}
-		++str;
-	}
-	return (counter);
+    AUTHORS  README.md  _receved.c  count_word.c
 
-}
+    environ.c  man_1_simple_shell  shell.h  simple_shell.c
+
+	strtok.c  tokenizer.c
+
+	($)
+
+	($) exit
+
+$
 
 ```
 
