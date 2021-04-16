@@ -1,14 +1,21 @@
-.TH "SIMPLE_SHELL" "15 April 2021"
+.TH "SIMPLE_SHELL"  "1" "15 April 2021"
 
 .SH NAME
     	Simple Shell - A simple UNIX command interpreter.
 .SH SYNOPSIS
-	[COMMAND] [OPTION]
+.B #include "shel.h
 .SH DESCRIPTION
+This is a UNIX command line interpreter based on the simple shell(sh).
+It reads user input from the command line, interprets it, and executes commands.
+
+In this project we want to emulate the Shell command interpreter,
+which allows the user to communicate with the kernel through instructions,
+which in turn allows them to be executed, on the other hand it allows access
+to tools that allow controlling the operation of the computer.
+
 	Process.
 
 	getline - a program that keeps in memory the line intrcuciton given by the user inside the shell.
-
 .br
 	token - a program that tokenize by strings.
 
